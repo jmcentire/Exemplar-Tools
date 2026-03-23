@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0f;
+  --color-surface: #0e0e16;
+  --color-card: #13131e;
+  --color-card-hover: #191928;
+  --color-border: #1e1e30;
+  --color-border-bright: #2a2a42;
+  --color-foreground: #e8e6e3;
+  --color-muted: #6b6980;
+  --color-dim: #3d3b50;
+  --color-signet: #c9a227;
+  --color-signet-dim: rgba(201, 162, 39, 0.12);
+  --color-kindex: #3b82f6;
+  --color-kindex-dim: rgba(59, 130, 246, 0.12);
+  --color-governance: #10b981;
+  --color-governance-dim: rgba(16, 185, 129, 0.12);
+  --color-danger: #ef4444;
+  --font-display: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono: 'DM Mono', 'JetBrains Mono', monospace;
+  --font-code: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-display);
+  background: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scan-line texture overlay */
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  pointer-events: none;
+}
+
+/* Glowing pulse for pipeline */
+@keyframes pulse-flow {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+@keyframes dash-flow {
+  to { stroke-dashoffset: -20; }
+}
+
+.dash-animated {
+  animation: dash-flow 1.5s linear infinite;
+}
+
+/* Grid noise texture */
+.grid-texture {
+  background-image:
+    linear-gradient(rgba(30, 30, 48, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 30, 48, 0.5) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
