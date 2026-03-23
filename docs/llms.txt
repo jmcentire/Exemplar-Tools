@@ -1,0 +1,70 @@
+# Exemplar
+
+> 18 open-source projects forming a closed-loop engineering governance stack.
+
+## What is Exemplar?
+
+Exemplar is an open-source engineering governance stack created by Jeremy McEntire. It consists of 18 interconnected projects that form a closed loop: from constraint specification, through code generation and deployment, to production monitoring and contract tightening. When a bug occurs in production, the system traces it back to the contract that caused it and tightens that contract so the entire class of bug becomes non-recurring.
+
+## Key Numbers
+
+- 40 research papers and 7 books providing the theoretical foundation
+- 15,000+ automated tests across the stack
+- 18 open-source projects
+- 6 programming languages (Python, Rust, JavaScript, HTML, TypeScript, multi-language SDKs)
+
+## The Three Pillars
+
+### Trust & Privacy (signet.tools)
+- **Signet**: Personal sovereign agent stack. Cryptographic vault, ZK proofs, Ed25519 identity. Rust, 473 tests.
+- **signet-eval**: Deterministic policy enforcement for AI agent tool calls. Rust, 88 tests.
+- **Agent-Safe**: SPL authorization language. Six SDK implementations, ~2us evaluation.
+- **BlindDB**: Client-side encryption where relationships are uncomputable without the master secret.
+- **Tessera**: Self-validating executable documents.
+- **HermesP2P**: Decentralized ephemeral P2P messaging.
+
+### Intelligence (kindex.tools)
+- **Kindex**: Persistent knowledge graph for AI-assisted workflows. 37 MCP tools, hybrid FTS5+graph search. Python, 930 tests.
+- **Apprentice**: Adaptive model distillation. Routes between frontier API and local fine-tuned model. Python, 2,628 tests.
+- **Chronicler**: Event collection and story assembly.
+
+### Governance
+- **Pact**: Contract-first multi-agent software engineering. 10-phase pipeline. Python, 1,814 tests.
+- **Constrain**: Interactive constraint elicitation. Python, 259 tests.
+- **Baton**: Cloud-agnostic circuit orchestration. Python, 804 tests.
+- **Arbiter**: Trust enforcement with append-only ledger.
+- **Sentinel**: Production attribution via PACT keys. Python, 177 tests.
+- **Ledger**: Schema registry and data obligation manager. Python, 276 tests.
+- **Cartographer**: Stack adoption and compatibility scanner.
+- **Stigmergy**: Organizational awareness via indirect coordination signals.
+- **Exemplar**: Governed code review service demonstrating the entire stack. Python, 1,950 tests.
+
+## The Closed Loop Pipeline
+
+1. **Specify** — Constrain + Ledger extract project boundaries and schema obligations
+2. **Build** — Pact generates contracts, tests, and implementations
+3. **Deploy** — Baton orchestrates deployment with self-healing topologies
+4. **Observe** — Sentinel, Arbiter, and Kindex monitor production
+5. **Tighten** — Production incidents feed back to tighten contracts, eliminating bug classes
+
+Cross-cutting layers:
+- **Trust Layer**: Signet provides cryptographic policy enforcement across every stage
+- **Intelligence Layer**: Kindex provides persistent knowledge context to every stage
+
+## Research Foundation
+
+The stack is built on 40 research papers and 7 books by Jeremy McEntire, published at perardua.dev. Key works include:
+- Organizational Physics of Multi-Agent AI (OT-4)
+- Ambient Structure Discovery (OT-5)
+- Emergence: Programming paradigm for constraint-shaped agency (OT-6)
+- Structural Compression Theory (Monograph)
+
+## Links
+
+- Website: https://exemplar.tools
+- GitHub: https://github.com/jmcentire
+- Signet: https://signet.tools
+- Kindex: https://kindex.tools
+- Research: https://perardua.dev
+- Author: Jeremy McEntire (https://perardua.dev)
+- License: MIT
