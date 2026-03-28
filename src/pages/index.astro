@@ -9,6 +9,7 @@ import {
   ArrowRight, ExternalLink, Target,
   Cpu, Network, Workflow,
   Fingerprint, MessageSquare, FileText, Gauge, Map, Signal,
+  Search, Users, Sparkles,
 } from "lucide-react";
 ---
 
@@ -58,7 +59,7 @@ import {
       </h1>
 
       <p class="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 font-light">
-        Exemplar closes the loop. 18 open-source projects that turn production incidents into tightened contracts. Bugs don't recur — they can't.
+        Exemplar closes the loop. 21 open-source projects that turn production incidents into tightened contracts. Bugs don't recur — they can't.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-20">
@@ -88,7 +89,7 @@ import {
           <p class="font-mono text-xs text-muted uppercase tracking-wider mt-1">tests</p>
         </div>
         <div class="text-center">
-          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">18</p>
+          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">21</p>
           <p class="font-mono text-xs text-muted uppercase tracking-wider mt-1">projects</p>
         </div>
         <div class="text-center">
@@ -113,7 +114,7 @@ import {
     <div class="absolute inset-0 grid-texture opacity-15"></div>
     <div class="relative z-10 max-w-7xl mx-auto px-6">
       <div class="text-center mb-4">
-        <span class="font-mono text-xs text-muted uppercase tracking-widest">18 Projects</span>
+        <span class="font-mono text-xs text-muted uppercase tracking-widest">21 Projects</span>
       </div>
       <div class="text-center mb-16">
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
@@ -268,6 +269,19 @@ import {
                 <span class="font-mono text-[10px] px-2 py-0.5 rounded text-blue-400 bg-blue-400/10">Python</span>
               </div>
             </a>
+            <a href="https://github.com/jmcentire/transmogrifier" target="_blank" rel="noopener noreferrer" class="block p-5 rounded-lg border bg-card hover:bg-card-hover transition-all duration-200 group border-kindex/20 hover:shadow-lg hover:shadow-black/20 hover:-translate-y-0.5">
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <Sparkles className="w-4 h-4 text-kindex opacity-60" />
+                  <h3 class="text-sm font-semibold">Transmogrifier</h3>
+                </div>
+                <ExternalLink className="w-3.5 h-3.5 text-dim opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <p class="text-xs text-muted leading-relaxed mb-3">Register-aware prompt translation. Detects linguistic register and normalizes for optimal LLM output. 18.8pp accuracy improvement on Claude, 56pp on Gemini. Middleware for Constrain, Pact, Kindex, Webprobe, and Advocate.</p>
+              <div class="flex items-center gap-2">
+                <span class="font-mono text-[10px] px-2 py-0.5 rounded text-blue-400 bg-blue-400/10">Python</span>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -399,6 +413,42 @@ import {
               <div class="flex items-center gap-2">
                 <span class="font-mono text-[10px] px-2 py-0.5 rounded text-blue-400 bg-blue-400/10">Python</span>
                 <span class="font-mono text-[10px] text-dim">1,950 tests</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Audit & Quality -->
+        <div>
+          <div class="mb-6 flex items-center gap-3">
+            <span class="font-mono text-xs text-audit uppercase tracking-widest">Audit & Quality</span>
+            <div class="h-px flex-1 bg-audit/10"></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <a href="https://github.com/jmcentire/webprobe" target="_blank" rel="noopener noreferrer" class="block p-5 rounded-lg border bg-card hover:bg-card-hover transition-all duration-200 group border-audit/20 hover:shadow-lg hover:shadow-black/20 hover:-translate-y-0.5">
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <Search className="w-4 h-4 text-audit opacity-60" />
+                  <h3 class="text-sm font-semibold">Webprobe</h3>
+                </div>
+                <ExternalLink className="w-3.5 h-3.5 text-dim opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <p class="text-xs text-muted leading-relaxed mb-3">Generic site state-graph auditor. Maps websites as directed graphs, captures metrics via headless browsers, scans for security vulnerabilities, and uses LLM-driven agents for visual defect discovery and interactive testing.</p>
+              <div class="flex items-center gap-2">
+                <span class="font-mono text-[10px] px-2 py-0.5 rounded text-blue-400 bg-blue-400/10">Python</span>
+              </div>
+            </a>
+            <a href="https://github.com/jmcentire/advocate" target="_blank" rel="noopener noreferrer" class="block p-5 rounded-lg border bg-card hover:bg-card-hover transition-all duration-200 group border-audit/20 hover:shadow-lg hover:shadow-black/20 hover:-translate-y-0.5">
+              <div class="flex items-start justify-between mb-3">
+                <div class="flex items-center gap-2.5">
+                  <Users className="w-4 h-4 text-audit opacity-60" />
+                  <h3 class="text-sm font-semibold">Advocate</h3>
+                </div>
+                <ExternalLink className="w-3.5 h-3.5 text-dim opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <p class="text-xs text-muted leading-relaxed mb-3">Six-persona adversarial review engine. Red Team, Adversarial, Sage, User, SME, and Good Friend attack code from different angles simultaneously. Disagreement detection surfaces tensions worth examining.</p>
+              <div class="flex items-center gap-2">
+                <span class="font-mono text-[10px] px-2 py-0.5 rounded text-blue-400 bg-blue-400/10">Python</span>
               </div>
             </a>
           </div>
@@ -559,6 +609,8 @@ import {
             <a href="https://github.com/jmcentire/kindex" target="_blank" rel="noopener noreferrer" class="block text-sm text-muted hover:text-foreground transition-colors">Kindex</a>
             <a href="https://github.com/jmcentire/baton" target="_blank" rel="noopener noreferrer" class="block text-sm text-muted hover:text-foreground transition-colors">Baton</a>
             <a href="https://github.com/jmcentire/exemplar" target="_blank" rel="noopener noreferrer" class="block text-sm text-muted hover:text-foreground transition-colors">Exemplar</a>
+            <a href="https://github.com/jmcentire/webprobe" target="_blank" rel="noopener noreferrer" class="block text-sm text-muted hover:text-foreground transition-colors">Webprobe</a>
+            <a href="https://github.com/jmcentire/advocate" target="_blank" rel="noopener noreferrer" class="block text-sm text-muted hover:text-foreground transition-colors">Advocate</a>
           </div>
         </div>
         <div>

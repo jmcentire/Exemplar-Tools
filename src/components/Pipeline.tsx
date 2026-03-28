@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import {
-  Shield, Brain,
+  Shield, Brain, Sparkles,
   ChevronRight, ChevronDown, ExternalLink,
 } from "lucide-react";
 
@@ -197,6 +197,16 @@ export default function Pipeline() {
                   <span className="text-xs text-muted ml-3">Kindex — persistent knowledge graph feeding context to every stage</span>
                 </div>
                 <a href="https://kindex.tools" target="_blank" rel="noopener noreferrer" className="text-kindex hover:text-kindex/80 transition-colors">
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+              <div className="flex items-center gap-4 px-4 py-3 rounded-md border border-optimize/20 bg-optimize-dim">
+                <Sparkles className="w-4 h-4 text-optimize shrink-0" />
+                <div className="flex-1">
+                  <span className="font-mono text-[11px] text-optimize uppercase tracking-widest">Optimization Layer</span>
+                  <span className="text-xs text-muted ml-3">Transmogrifier — register-aware prompt normalization across Constrain, Pact, and all downstream LLM calls</span>
+                </div>
+                <a href="https://github.com/jmcentire/transmogrifier" target="_blank" rel="noopener noreferrer" className="text-optimize hover:text-optimize/80 transition-colors">
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>

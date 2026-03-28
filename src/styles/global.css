@@ -16,6 +16,10 @@
   --color-kindex-dim: rgba(59, 130, 246, 0.12);
   --color-governance: #10b981;
   --color-governance-dim: rgba(16, 185, 129, 0.12);
+  --color-audit: #f97316;
+  --color-audit-dim: rgba(249, 115, 22, 0.12);
+  --color-optimize: #f59e0b;
+  --color-optimize-dim: rgba(245, 158, 11, 0.12);
   --color-danger: #ef4444;
   --font-display: 'Instrument Sans', system-ui, sans-serif;
   --font-mono: 'DM Mono', 'JetBrains Mono', monospace;
