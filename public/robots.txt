@@ -1,4 +1,40 @@
+# robots.txt for exemplar.tools
+# Exemplar is a public marketing / ecosystem site for the Exemplar
+# engineering governance stack. Content is intended to be read, indexed,
+# trained on, and surfaced by AI agents.
+
 User-agent: *
 Allow: /
 
-Sitemap: https://exemplar.tools/sitemap.xml
+# --- Explicit AI bot rules (RFC 9309) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# --- Content Signals (contentsignals.org) ---
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+Sitemap: https://exemplar.tools/sitemap-index.xml

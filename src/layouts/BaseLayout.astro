@@ -59,6 +59,26 @@ const ogImage = new URL("/og-image.svg", Astro.site);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- WebMCP (A6): expose in-page tools to model-context-aware agents -->
+    <script>
+      if (navigator.modelContext) {
+        navigator.modelContext.provideContext({
+          tools: [
+            {
+              name: "get_site_info",
+              description: "Return site metadata",
+              inputSchema: { type: "object", properties: {} },
+              execute: async () => ({
+                site: "exemplar.tools",
+                description: "Exemplar — Pact's example/template ecosystem",
+                api_catalog: "/.well-known/api-catalog",
+              }),
+            },
+          ],
+        });
+      }
+    </script>
   </head>
   <body>
     <slot />
