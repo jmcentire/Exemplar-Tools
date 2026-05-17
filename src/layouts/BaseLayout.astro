@@ -6,7 +6,7 @@ interface Props {
 
 const {
   title = "Exemplar — The Engineering Stack That Governs Itself",
-  description = "18 open-source projects forming a closed-loop engineering governance stack. From constraint to code to production to tightened contract.",
+  description = "23 proper tools forming a closed-loop engineering governance stack. From constraint to code to production to tightened contract.",
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -44,7 +44,7 @@ const ogImage = new URL("/og-image.svg", Astro.site);
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Exemplar",
-      "description": "18 open-source projects forming a closed-loop engineering governance stack",
+      "description": "23 proper tools forming a closed-loop engineering governance stack",
       "url": "https://exemplar.tools",
       "author": {
         "@type": "Person",
@@ -71,7 +71,7 @@ const ogImage = new URL("/og-image.svg", Astro.site);
               inputSchema: { type: "object", properties: {} },
               execute: async () => ({
                 site: "exemplar.tools",
-                description: "Exemplar — Pact's example/template ecosystem",
+                description: "Exemplar — a closed-loop suite of proper tools for governed AI software engineering",
                 api_catalog: "/.well-known/api-catalog",
               }),
             },

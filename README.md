@@ -6,15 +6,16 @@ The engineering stack that governs itself.
 
 ## What is this?
 
-Exemplar is the umbrella site for an 18-project open-source engineering stack that forms a closed governance loop — from constraint specification through code generation, deployment, production observation, and contract tightening.
+Exemplar is the umbrella site for a 23-tool open-source engineering stack that forms a closed governance loop — from constraint specification through code generation, deployment, production observation, and contract tightening.
 
 ### The Stack
 
 | Pillar | Projects | Domain |
 |--------|----------|--------|
-| **Trust & Privacy** | Signet, signet-eval, Agent-Safe, BlindDB, Tessera, HermesP2P | [signet.tools](https://signet.tools) |
-| **Intelligence** | Kindex, Apprentice, Chronicler | [kindex.tools](https://kindex.tools) |
-| **Governance** | Pact, Constrain, Baton, Arbiter, Sentinel, Ledger, Cartographer, Stigmergy, Exemplar | — |
+| **Trust & Privacy** | Signet, signet-eval, Agent-Safe | [signet.tools](https://signet.tools) |
+| **Intelligence** | Kindex, Apprentice, Chronicler, Transmogrifier | [kindex.tools](https://kindex.tools) |
+| **Governance** | Pact, Constrain, Baton, Arbiter, Sentinel, Ledger, Cartographer, Stack Smoke, Aegis, Covenant, Scram, Witness, Vigil, Exemplar | — |
+| **Audit & Quality** | Webprobe, Advocate | — |
 
 ### The Loop
 

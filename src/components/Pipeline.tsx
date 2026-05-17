@@ -24,6 +24,7 @@ const stages = [
     projects: [
       { name: "Constrain", desc: "Interactive constraint elicitation. Interviews users to extract project boundaries." },
       { name: "Ledger", desc: "Schema registry and data obligation manager. Field-level classifications." },
+      { name: "Covenant", desc: "Runtime contract validation with environment policies and violation budgets." },
     ],
   },
   {
@@ -32,6 +33,7 @@ const stages = [
     color: "governance",
     projects: [
       { name: "Pact", desc: "Contract-first multi-agent framework. 10-phase pipeline, 1,814 tests." },
+      { name: "Stack Smoke", desc: "Cross-stack smoke tests prove the tool suite works together." },
     ],
   },
   {
@@ -40,6 +42,8 @@ const stages = [
     color: "governance",
     projects: [
       { name: "Baton", desc: "Cloud-agnostic circuit orchestration. Pre-wired topologies, canary promotion, self-healing. 804 tests." },
+      { name: "Aegis", desc: "Timeouts, fallbacks, and structured budgets for blocking calls." },
+      { name: "Scram", desc: "Emergency kill-switch when rollback must be immediate." },
     ],
   },
   {
@@ -49,6 +53,8 @@ const stages = [
     projects: [
       { name: "Sentinel", desc: "Production attribution via PACT keys. Spawns LLM fixer agents." },
       { name: "Arbiter", desc: "Trust enforcement. Append-only ledger, blast-radius classification." },
+      { name: "Vigil", desc: "Sub-threshold anomaly detection across event streams and traces." },
+      { name: "Witness", desc: "Human-in-the-loop approvals with rationale and audit trails." },
       { name: "Kindex", desc: "Persistent knowledge graph. Shared memory for the entire agent ecosystem." },
     ],
   },
