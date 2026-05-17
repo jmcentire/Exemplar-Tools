@@ -31,7 +31,7 @@
   <text x="600" y="345" text-anchor="middle" font-family="'Instrument Sans', 'Inter', system-ui, sans-serif" font-size="24" font-weight="400" fill="#8888a0" letter-spacing="1">The engineering stack that governs itself</text>
 
   <!-- Stats -->
-  <text x="600" y="430" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="18" font-weight="400" fill="#555570" letter-spacing="3">18 projects  ·  15,000+ tests  ·  40 papers</text>
+  <text x="600" y="430" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', monospace" font-size="18" font-weight="400" fill="#555570" letter-spacing="3">23 proper tools  ·  15,000+ tests  ·  45 papers</text>
 
   <!-- Corner accents -->
   <rect x="60" y="60" width="24" height="2" fill="#3b82f650" rx="1"/>

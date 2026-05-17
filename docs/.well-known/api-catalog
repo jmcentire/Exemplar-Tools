@@ -1,0 +1,32 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://exemplar.tools/",
+      "service-desc": [
+        {
+          "href": "https://exemplar.tools/.well-known/capabilities.yaml",
+          "type": "application/yaml",
+          "title": "Exemplar capabilities manifest"
+        }
+      ],
+      "alternate": [
+        {
+          "href": "https://exemplar.tools/llms.txt",
+          "type": "text/markdown",
+          "title": "llms.txt summary"
+        },
+        {
+          "href": "https://exemplar.tools/llms-full.txt",
+          "type": "text/markdown",
+          "title": "llms-full.txt long-form"
+        }
+      ],
+      "sitemap": [
+        {
+          "href": "https://exemplar.tools/sitemap-index.xml",
+          "type": "application/xml"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# Capabilities Manifest — exemplar.tools
+# Spec: https://perardua.dev/specs/capabilities
+
+manifest:
+  spec: "0.1"
+  updated: "2026-03-26T00:00:00Z"
+  canonical: "https://perardua.dev/specs/capabilities"
+
+domain:
+  name: "Exemplar"
+  url: "https://exemplar.tools"
+  description: >
+    Reference implementation of a governed code review service demonstrating
+    17 projects in the governance stack working together. Diff intake, circuit
+    routing, multi-reviewer analysis, trust-weighted assessment merging,
+    hash-chain sealed reports, and self-healing production learning loop.
+  contact: "jmc@cageandmirror.com"
+  tos: "/tos"
+  privacy: "/privacy"
+
+read:
+  - id: landing
+    path: /
+    description: "Architecture overview: three pillars (Trust & Privacy, Intelligence, Governance), self-healing loop, research context"
+    auth: public
+    response:
+      format: text/html
+    cache:
+      ttl: 86400
+      signal: stable
+
+  - id: llms_txt
+    path: /llms.txt
+    description: "Machine-readable governance stack documentation for LLM consumption"
+    auth: public
+    response:
+      format: text/plain
+    cache:
+      ttl: 86400
+      signal: stable

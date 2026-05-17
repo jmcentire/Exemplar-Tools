@@ -1,0 +1,162 @@
+# Exemplar Tools
+
+The engineering stack that governs itself.
+
+**[exemplar.tools](https://exemplar.tools)**
+
+## What is this?
+
+Exemplar is the umbrella site for a 23-tool open-source engineering stack
+that forms a closed governance loop — from constraint specification through
+code generation, deployment, production observation, and contract tightening.
+
+### The Stack
+
+| Pillar | Projects | Domain |
+|--------|----------|--------|
+| **Trust & Privacy** | Signet, signet-eval, Agent-Safe | [signet.tools](https://signet.tools) |
+| **Intelligence** | Kindex, Apprentice, Chronicler, Transmogrifier | [kindex.tools](https://kindex.tools) |
+| **Governance** | Pact, Constrain, Baton, Arbiter, Sentinel, Ledger, Cartographer, Stack Smoke, Aegis, Covenant, Scram, Witness, Vigil, Exemplar | — |
+| **Audit & Quality** | Webprobe, Advocate | — |
+
+### The Loop
+
+```
+SPECIFY -> BUILD -> DEPLOY -> OBSERVE -> TIGHTEN -> (back to SPECIFY)
+```
+
+Production incidents don't just get fixed — they generate tightened contracts
+that make the bug class non-recurring.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Deployment
+
+Deployed to [Fly.io](https://fly.io) via Docker + nginx.
+
+```bash
+fly deploy
+```
+
+## License
+
+MIT
+
+---
+
+## Extended Notes for Agents
+
+### Project Inventory
+
+**Trust & Privacy (signet.tools)**
+- **Signet** — Personal sovereign agent stack. Cryptographic vault, ZK proofs,
+  Ed25519 identity, XACML-derived policy engine. Four protocols (SCP, VAP, SNP,
+  SVP). Rust, 473 tests.
+- **signet-eval** — Deterministic policy enforcement for AI agent tool calls.
+  Rust, 88 tests.
+- **Agent-Safe** — SPL authorization language. Six SDK implementations,
+  sub-microsecond evaluation.
+
+**Intelligence (kindex.tools)**
+- **Kindex** — Persistent knowledge graph for AI-assisted workflows. 37 MCP
+  tools, hybrid FTS5 + graph search. Python, 930 tests.
+- **Apprentice** — Adaptive model distillation. Routes between frontier API and
+  local fine-tuned model, progressively shifting traffic as correlation proves
+  quality. Python, 2,628 tests.
+- **Chronicler** — Event collection and story assembly.
+- **Transmogrifier** — Register-aware prompt translation for model- and
+  task-specific output quality.
+
+**Governance**
+- **Pact** — Contract-first multi-agent software engineering framework.
+  Ten-phase pipeline: Interview, Shape, Decompose, Contract, Test, Validate,
+  Implement, Integrate, Polish, Diagnose. Python, 1,814 tests.
+- **Constrain** — Interactive constraint elicitation. Python, 259 tests.
+- **Baton** — Cloud-agnostic circuit orchestration. Python, 804 tests.
+- **Arbiter** — Trust enforcement with append-only ledger.
+- **Sentinel** — Production attribution via PACT keys; spawns fixer agents and
+  pushes tightened contracts upstream. Python, 177 tests.
+- **Ledger** — Schema registry and data obligation manager. Python, 276 tests.
+- **Cartographer** — Stack adoption and compatibility scanner.
+- **Stack Smoke** — Cross-stack smoke tests for suite installation and
+  interoperability.
+- **Aegis** — Resource-budget primitive for timeouts, fallbacks, and tagged
+  blocking calls.
+- **Covenant** — Contract validation runtime with per-environment policy and
+  violation budgets.
+- **Scram** — Emergency kill-switch service for catastrophic failure
+  containment.
+- **Witness** — Human-in-the-loop coordination primitive with approval,
+  rationale, and audit.
+- **Vigil** — Sub-threshold anomaly detection across event streams and traces.
+- **Exemplar** — Governed code review service demonstrating the entire stack.
+  Python, 1,950 tests.
+
+**Audit & Quality**
+- **Webprobe** — Site state-graph auditor with browser metrics, security checks,
+  visual review, and interactive testing.
+- **Advocate** — Six-persona adversarial review engine for code, design docs,
+  and architecture decisions.
+
+### The Closed Loop Pipeline
+
+1. **Specify** — Constrain, Ledger, and Covenant extract project boundaries,
+   schema obligations, and runtime contracts.
+2. **Build** — Pact generates contracts, tests, and implementations; Stack
+   Smoke verifies integration.
+3. **Deploy** — Baton orchestrates deployment with self-healing topologies;
+   Aegis budgets blocking calls and Scram provides last-resort rollback.
+4. **Observe** — Sentinel, Arbiter, Vigil, Witness, and Kindex monitor
+   production and coordinate judgment.
+5. **Tighten** — Production incidents feed back to tighten contracts,
+   eliminating bug classes.
+
+Cross-cutting layers:
+- **Trust Layer** — Signet provides cryptographic policy enforcement across
+  every stage.
+- **Intelligence Layer** — Kindex provides persistent knowledge context to
+  every stage.
+
+### Research Foundation
+
+Built on 45 research papers and 8 books by Jeremy McEntire, published at
+[perardua.dev](https://perardua.dev). Key works:
+- Organizational Physics of Multi-Agent AI (OT-4)
+- Ambient Structure Discovery (OT-5)
+- Emergence: Programming paradigm for constraint-shaped agency (OT-6)
+- Structural Compression Theory (Monograph)
+
+### Key Numbers
+
+- 45 research papers and 8 books providing the theoretical foundation
+- 15,000+ automated tests across the stack
+- 23 proper tools
+- 6 programming languages (Python, Rust, JavaScript, HTML, TypeScript,
+  multi-language SDKs)
+
+### Capabilities Manifest
+
+A machine-readable capability descriptor is available at
+`/.well-known/capabilities.yaml` following the spec at
+`https://perardua.dev/specs/capabilities`.
+
+### Infrastructure
+
+- Astro (static site) + Tailwind + React
+- Built to `dist/`, served by nginx in a container on Fly.io
+- Region: `dfw`
+
+### Links
+
+- Website: https://exemplar.tools
+- GitHub: https://github.com/jmcentire
+- Signet: https://signet.tools
+- Kindex: https://kindex.tools
+- Research: https://perardua.dev
+- Author: Jeremy McEntire (https://perardua.dev)
+- License: MIT
