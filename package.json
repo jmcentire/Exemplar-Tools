@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "verify:copy": "node scripts/verify-copy-counts.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^5.0.1",

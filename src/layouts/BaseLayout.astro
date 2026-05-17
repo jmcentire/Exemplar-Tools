@@ -1,4 +1,6 @@
 ---
+import { SITE_STATS } from "../data/siteStats";
+
 interface Props {
   title?: string;
   description?: string;
@@ -6,7 +8,7 @@ interface Props {
 
 const {
   title = "Exemplar — The Engineering Stack That Governs Itself",
-  description = "23 proper tools forming a closed-loop engineering governance stack. From constraint to code to production to tightened contract.",
+  description = `${SITE_STATS.properTools} proper tools forming a closed-loop engineering governance stack. From constraint to code to production to tightened contract.`,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -44,7 +46,7 @@ const ogImage = new URL("/og-image.svg", Astro.site);
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Exemplar",
-      "description": "23 proper tools forming a closed-loop engineering governance stack",
+      "description": `${SITE_STATS.properTools} proper tools forming a closed-loop engineering governance stack`,
       "url": "https://exemplar.tools",
       "author": {
         "@type": "Person",

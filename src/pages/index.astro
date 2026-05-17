@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 import Pipeline from "../components/Pipeline.tsx";
 import TheLoop from "../components/TheLoop.tsx";
+import { RESEARCH_FOUNDATION, SITE_STATS } from "../data/siteStats";
 import {
   Shield, Brain, Eye, Lock, FileCheck,
   Database, BookOpen, Layers,
@@ -60,7 +61,7 @@ import {
       </h1>
 
       <p class="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 font-light">
-        Exemplar closes the loop. 23 proper tools that turn production incidents into tightened contracts. Bugs don't recur — they can't.
+        Exemplar closes the loop. {SITE_STATS.properTools} proper tools that turn production incidents into tightened contracts. Bugs don't recur — they can't.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-20">
@@ -82,19 +83,19 @@ import {
 
       <div class="flex items-center justify-center gap-8 sm:gap-12">
         <div class="text-center">
-          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">40</p>
+          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">{SITE_STATS.activeResearchPapers}</p>
           <p class="font-mono text-xs text-muted uppercase tracking-wider mt-1">papers</p>
         </div>
         <div class="text-center">
-          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">15,000+</p>
+          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">{SITE_STATS.tests}</p>
           <p class="font-mono text-xs text-muted uppercase tracking-wider mt-1">tests</p>
         </div>
         <div class="text-center">
-          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">23</p>
+          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">{SITE_STATS.properTools}</p>
           <p class="font-mono text-xs text-muted uppercase tracking-wider mt-1">proper tools</p>
         </div>
         <div class="text-center">
-          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">6</p>
+          <p class="font-mono text-2xl sm:text-3xl font-medium text-foreground">{SITE_STATS.languages}</p>
           <p class="font-mono text-xs text-muted uppercase tracking-wider mt-1">languages</p>
         </div>
       </div>
@@ -115,7 +116,7 @@ import {
     <div class="absolute inset-0 grid-texture opacity-15"></div>
     <div class="relative z-10 max-w-7xl mx-auto px-6">
       <div class="text-center mb-4">
-        <span class="font-mono text-xs text-muted uppercase tracking-widest">23 Proper Tools</span>
+        <span class="font-mono text-xs text-muted uppercase tracking-widest">{SITE_STATS.properTools} Proper Tools</span>
       </div>
       <div class="text-center mb-16">
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
@@ -492,7 +493,7 @@ import {
       </div>
       <div class="text-center mb-16">
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
-          26 papers written. 8 books published. Then the code.
+          {RESEARCH_FOUNDATION}
         </h2>
       </div>
 
@@ -541,7 +542,7 @@ import {
 
       <div class="text-center">
         <a href="https://perardua.dev/research" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-mono text-sm text-muted hover:text-foreground transition-colors">
-          Read all 26 papers <ArrowRight className="w-4 h-4" />
+          Read all {SITE_STATS.activeResearchPapers} papers <ArrowRight className="w-4 h-4" />
         </a>
       </div>
     </div>
