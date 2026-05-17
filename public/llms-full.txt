@@ -124,7 +124,7 @@ Cross-cutting layers:
 
 ### Research Foundation
 
-Built on 45 research papers and 8 books by Jeremy McEntire, published at
+Built on 26 active research papers and 8 books by Jeremy McEntire, published at
 [perardua.dev](https://perardua.dev). Key works:
 - Organizational Physics of Multi-Agent AI (OT-4)
 - Ambient Structure Discovery (OT-5)
@@ -133,7 +133,7 @@ Built on 45 research papers and 8 books by Jeremy McEntire, published at
 
 ### Key Numbers
 
-- 45 research papers and 8 books providing the theoretical foundation
+- 26 active research papers and 8 books providing the theoretical foundation
 - 15,000+ automated tests across the stack
 - 23 proper tools
 - 6 programming languages (Python, Rust, JavaScript, HTML, TypeScript,
