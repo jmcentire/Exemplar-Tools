@@ -6,6 +6,7 @@ const root = process.cwd();
 const checks = [
   ["src/pages/index.astro", ["SITE_STATS.activeResearchPapers", "SITE_STATS.properTools", "SITE_STATS.tests", "SITE_STATS.languages"]],
   ["src/layouts/BaseLayout.astro", ["SITE_STATS.properTools"]],
+  ["nginx.conf", ['Cache-Control "no-cache, must-revalidate"']],
   ["public/llms.txt", ["26 active research papers", "8 books", "23 proper tools"]],
   ["public/llms-full.txt", ["26 active research papers", "8 books", "23 proper tools"]],
   ["public/og-image.svg", ["23 proper tools", "26 papers"]],
